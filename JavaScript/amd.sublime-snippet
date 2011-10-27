@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * ${1:$TM_FILENAME} - ${2:description}
+ * 
+ */
+(function(define){
+	define('${1:$TM_FILENAME}', [], function(){
+		function ${1:$TM_FILENAME} (){
+			// constructor implementation
+			$3
+		}
+		${1:$TM_FILENAME}.prototype = {
+			// prototype implementation
+			$4
+		}
+		return ${1:$TM_FILENAME};
+	});
+})(
+typeof define !== 'undefined'? define :
+typeof module !== 'undefined'? function(n,d,f){module.exports = f();} :
+function(n,d,f){this[n] = f();}
+);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Asynchronous Module Definition Pattern</description>
+</snippet>
